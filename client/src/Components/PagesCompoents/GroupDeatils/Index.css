@@ -1,0 +1,70 @@
+.index_deatils {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.parent_seat_map_wraper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 20; */
+}
+
+.mapclass {
+  /* border: 2px solid white; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  /* z-index: 20 !important; */
+}
+.map_wraper {
+  /* width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    border: 2px solid purple;
+    background-color: white;
+    position: relative; */
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+#Calque_1 {
+  z-index: 999 !important;
+}
+
+/* ============ media  */
+@media (max-width: 850px) {
+  .index_groupdeatails {
+    height: auto !important;
+    overflow: auto !important;
+  }
+  .index_deatils {
+    grid-template-columns: 1fr;
+    overflow: auto !important;
+  }
+  .chactout_sidebar {
+    order: 2;
+    width: 100% !important;
+    height: auto !important;
+    overflow: auto !important;
+  }
+  .checkout_sidebar_inner {
+    /* height: auto !important;
+    overflow: auto;
+    border: 2px solid red;
+    height: 100vh !important; */
+    position: fixed !important;
+    z-index: 10000000;
+    height: 100vh !important;
+  }
+  .deatils_sidebar {
+  }
+}

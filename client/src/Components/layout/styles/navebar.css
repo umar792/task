@@ -1,0 +1,130 @@
+.logobluer {
+  animation: blurAnimation 2s linear infinite;
+}
+.header {
+  position: sticky;
+  top: 0;
+}
+
+@keyframes blurAnimation {
+  0%,
+  100% {
+    filter: blur(25px);
+  }
+  50% {
+    filter: blur(15px);
+  }
+}
+
+/* ======================================  */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+}
+/* ============= media querry  */
+@media (max-width: 1380px) {
+  .header {
+    padding: 4px 30px !important ;
+    position: sticky;
+  }
+}
+
+@media (max-width: 1210px) {
+  .serachbar {
+    min-width: 450px !important;
+  }
+  .username {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header_menus {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    z-index: 192;
+    flex-direction: column;
+    padding: 50px 20px;
+    transform: translateX(-100%);
+    transition: transform 0.2s linear;
+  }
+  .login_mobile {
+    display: block;
+  }
+  .mobileHeader {
+    transform: translateX(0%);
+    transition: transform 0.2s linear;
+  }
+  .header_menus nav {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .header_menus nav a {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 1px 0px;
+    border-bottom: 1px solid black;
+  }
+
+  /* ------- serachbar */
+  .sub_header {
+    /* display: grid !important;
+    grid-template-columns: repeat(2, 1fr); */
+    flex-wrap: wrap;
+  }
+  .serachbar {
+    order: 3;
+    width: 100%;
+    margin: 0px auto;
+  }
+  .right_header {
+    /* width: 250px; */
+    display: none;
+  }
+  .logo {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+  }
+  .logo svg {
+    display: block !important;
+  }
+  .cross_burger {
+    display: block;
+  }
+}
+
+@media (max-width: 678px) {
+  .header {
+    padding: 4px 10px !important;
+  }
+  .serachbar {
+    min-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+/* ------ extra media  */
+@media (max-width: 590px) {
+  .username {
+    display: none;
+  }
+  .right_header a button {
+    display: none;
+  }
+  .right_header a svg {
+    display: block;
+  }
+  .right_header {
+    width: 50px !important;
+  }
+  .header_menus {
+    width: 100% !important;
+  }
+}

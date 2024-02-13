@@ -1,0 +1,27 @@
+.ticketsGroup {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20;
+}
+
+/* -------- media  */
+@media (max-width: 1380px) {
+  .ticket_page {
+    padding: 0px 30px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .ticketsGroup {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  .headermenus_ticket {
+    width: 900px;
+  }
+  .headermenus_ticket_parent {
+    overflow-x: auto !important;
+  }
+}

@@ -1,0 +1,65 @@
+.index_category_section_under_header {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  gap: 20px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.filter_btn {
+  display: none;
+}
+.crosssidebar {
+  display: none;
+}
+
+/* --- media  */
+@media (max-width: 1380px) {
+  .ticketcategory_index {
+    padding: 20px 20px !important;
+  }
+  .categorysidebar {
+    min-width: 320px !important;
+  }
+  .dateinput_category {
+    width: 140px !important ;
+  }
+}
+
+@media (max-width: 1050px) {
+  .categorysidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.2s linear;
+    z-index: 999;
+    width: 320px;
+    height: 100vh;
+  }
+  .categorySidebarMobile {
+    transform: translateX(0%);
+    transition: transform 0.2s linear;
+  }
+  .index_category_section_under_header {
+    grid-template-columns: 1fr;
+  }
+  .nameforsearch {
+    display: none;
+  }
+  .filter_btn {
+    display: block;
+  }
+  .crosssidebar {
+    display: block;
+  }
+}

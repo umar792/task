@@ -1,0 +1,45 @@
+.profile {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  gap: 0px;
+}
+.profileburger {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .table {
+    border: 2px solid blue;
+    width: 1000px;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .profile {
+    grid-template-columns: 1fr;
+  }
+  .profileSidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 350px !important;
+    transform: translateX(-100%);
+    transition: transform 0.1s linear;
+    z-index: 20;
+  }
+  .profileSidebar_mobile {
+    transform: translateX(0%);
+    transition: transform 0.1s linear;
+  }
+  .profileburger {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .profileSidebar {
+    width: 100% !important;
+  }
+}

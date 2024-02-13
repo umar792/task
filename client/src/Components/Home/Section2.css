@@ -1,0 +1,9 @@
+.card_image:hover img {
+  /* transform: translateY(0%); */
+  transform: scale(1.05);
+}
+.card_content {
+  /* transform: translateY(100%); */
+}
+
+/* ===============  */
