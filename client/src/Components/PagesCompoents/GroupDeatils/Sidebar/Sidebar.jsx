@@ -41,7 +41,7 @@ const Sidebar = ({ filterevent, filtertheEvent }) => {
               {filterevent && filterevent[0]?.name}
             </h2>
             <p className="text-[13px] text-color5">
-              InstaPass is a ticket marketplace that puts fans first. All
+              TicketPlay is a ticket marketplace that puts fans first. All
               tickets are protected by our <span>Fan Promise</span>.
             </p>
             <p className="text-[13px] text-color2 my-2 font-bold ">
